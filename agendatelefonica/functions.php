@@ -8,12 +8,10 @@
 	/////////////////////////////////////////////////////////////////
 	define('ARQUIVO', 'agenda.dat');
 
-
 	// 2. Funcionalidades
 	// Métodos auxiliares de validação e impressão
 	/////////////////////////////////////////////////////////////////
 	function valida_campos() {
-
 		if (isset($_POST['nome']))
 			if (isset($_POST['local']))
 				if (isset($_POST['telefone']))
