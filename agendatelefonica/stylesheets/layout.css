@@ -1,0 +1,92 @@
+body{background:url('../images/groovepaper.png')}
+.clear{clear:both}
+
+#listagem form {
+	border-bottom: 1px solid #EEE;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+#listagem form .trigger a {
+	background: #333;
+	color: #FFF;
+	font: bold 13px Arial, sans-serif;
+	padding: 3px 5px;
+}
+#listagem form div {
+	margin-top: 20px;
+}
+#listagem form .profile-pic {
+	background: url('../images/avatar-icon.png');
+}
+#listagem form .profile-info {
+	height: auto;
+	overflow: visible;
+}
+#listagem form input[type=text] {
+	background-color: #FFF !important;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	line-height: 20px;
+	padding: 4px;
+	width: 400px;
+}
+#listagem form input[type=submit] {
+	background: #D64747;
+	border: 0;
+	color: #FFF;
+	font: bold 13px Arial, sans-serif;
+	padding: 4px 10px;
+}
+
+#listagem {
+	margin: 20px;
+	padding: 10px;
+}
+#listagem article {
+	display: block;
+	margin-bottom: 10px;
+}
+#listagem article:after {
+	clear: both;
+	content: '.';
+	height: 0;
+	visibility: hidden;
+	width: 0;
+}
+#listagem .profile-pic {
+	border-radius: 4px;
+	box-shadow: inset 0 0 4px #999;
+	float: left;
+	height: 80px;
+	margin-right: 20px;
+	width: 80px;
+}
+#listagem .profile-info {
+	float: left;
+	height: 80px;
+	overflow: hidden;
+}
+#listagem .profile-info span {
+	display: block;
+}
+#listagem .profile-info .person-name {
+	color: #333;
+	font: bold 14px/16px Arial, sans-serif;
+}
+#listagem .profile-info .person-city {
+	color: #666;
+	font: normal 13px/16px Arial, sans-serif;
+	margin-bottom: 10px;
+}
+#listagem .profile-info .person-phone {
+	background: url('../images/phone-icon.png') no-repeat 3px center;
+	color: #666;
+	font: normal 12px/19px Arial, sans-serif;
+	text-indent: 26px; 
+}
+#listagem .profile-info .person-email {
+	background: url('../images/email-icon.png') no-repeat 3px center;
+	color: #666;
+	font: normal 12px/19px Arial, sans-serif;
+	text-indent: 26px; 
+}
