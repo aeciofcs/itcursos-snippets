@@ -1,3 +1,6 @@
+<?php include_once "functions.php"; ?>
+<?php valida_campos(); ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -27,28 +30,7 @@
 				</div>
 				<div class="clear"></div>
 			</form>
-			<article>
-				<div class="profile-pic" style="background:url('http://gravatar.com/avatar/ef060c5ec68b689dc2b616084ab9ebe5.png')">
-				</div>
-				<div class="profile-info">
-					<p><span class="person-name">Lucas F. Cunha</span></p>
-					<p><span class="person-city">Natal, RN</span></p>
-					<p><span class="person-phone">(84) 9613-3492</span></p>
-					<p><span class="person-email">lucasfercunha@gmail.com</span></p>
-				</div>
-				<div class="clear"></div>
-			</article>
-			<article>
-				<div class="profile-pic" style="background:url('http://gravatar.com/avatar/e4ec2c7574d4981605455c3c9a0a4aaf.png')">
-				</div>
-				<div class="profile-info">
-					<p><span class="person-name">Lucas M. Castro</span></p>
-					<p><span class="person-city">Natal, RN</span></p>
-					<p><span class="person-phone">(84) 0000-0000</span></p>
-					<p><span class="person-email">lucasmcastro@gmail.com</span></p>
-				</div>
-				<div class="clear"></div>
-			</article>
+			<?php recuperar_contatos(); ?>
 		</section>
 	</body>
 </html>
