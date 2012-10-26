@@ -15,7 +15,7 @@
 			$aluno = array($linhas[$linhaNome], $linhas[$linhaEmail], $linhas[$linhaTelefone]);
 			$alunos[] = $aluno;
 		}
-		return $alunos;
+		return @$alunos;
 	}
 
 	/*
@@ -44,7 +44,7 @@
 			$validacao &= @$_POST['telefone'] != "";
 			if (!$validacao)
 				header("Location: ?alunos/novo/erro");
-			elseif (verificarAluno($_POST['email']))
+			elseif (verificarAluno($_POST['email']) != -1)
 				header("Location: ?alunos/novo/email");
 			else {
 				$data = "Nome: " . $_POST['nome'] . PHP_EOL;
